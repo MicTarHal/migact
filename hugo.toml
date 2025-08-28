@@ -1,0 +1,89 @@
+baseURL = 'https://migact.net'
+languageCode = 'en-us'
+title = 'MigAct - Support of Civic Engagement'
+defaultContentLanguage = 'en'
+enableRobotsTXT = true
+disableKinds = ['taxonomy','term']
+
+[params]
+  [params.contact]
+    phone = '+420 774 324 035'
+    email = 'contact@migact.net'
+    [params.contact.address]
+      office = 'Revoluční 762/13, Prague, 110 00'
+      registration = 'Světova 523/1, Praha 8'
+    ico = '19843631'
+    databox = 'fdxji3v'
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    title = 'MigAct - Support of Civic Engagement'
+    [languages.en.params]
+      description = 'Supporting civic engagement and community building for people with migration backgrounds in Prague'
+      tagline = 'Creating Networks • Bridging the Gap • Strengthening Alliances • Unlocking the Potential'
+
+  [languages.cs]
+    languageName = 'Čeština'
+    title = 'MigAct - Podpora občanské angažovanosti'
+    [languages.cs.params]
+      description = 'Podpora občanské angažovanosti a budování komunity pro lidi s migračním pozadím v Praze'
+      tagline = 'Vytváříme sítě • Překlenujeme rozdíly • Posilujeme spojenectví • Odemykáme potenciál'
+    
+[menus]
+  [[menus.main]]
+    identifier = 'about'
+    pageRef = '/about'
+    weight = 10
+  [[menus.main]]
+    identifier = 'team'
+    pageRef = '/team'
+    parent = 'about'  
+    weight = 1
+  [[menus.main]]
+    identifier = 'what_we_do'
+    pageRef = '/what-we-do'
+    weight = 20
+  [[menus.main]]
+    identifier = 'projects'
+    pageRef = '/projects'
+    weight = 30
+  [[menus.main]]
+    identifier = 'join-us'
+    pageRef = '/join-us'
+    weight = 40
+  [[menus.main]]
+    identifier = 'contact'
+    pageRef = '/contact'
+    weight = 50
+
+  [[menus.footer]]
+    identifier = 'about_footer_group'
+    weight = 10
+  [[menus.footer]]
+    identifier = 'about'
+    pageRef = '/about'
+    parent = 'about_footer_group'
+    weight = 11
+  [[menus.footer]]
+    identifier = 'team'
+    pageRef = '/team'
+    parent = 'about_footer_group'
+    weight = 12
+  [[menus.footer]]
+    identifier = 'get_active'
+    weight = 20
+  [[menus.footer]]
+    identifier = 'join-us'
+    pageRef = '/join-us'
+    parent= 'get_active'
+    weight = 21
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+  tag = 'tags'
+  category = 'categories'
