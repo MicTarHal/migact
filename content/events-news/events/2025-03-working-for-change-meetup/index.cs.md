@@ -2,8 +2,6 @@
 title: Meetup – Jak se angažovat v důležitých tématech ve své zemi původu a zároveň se zapojit do témat v zemi, kde žiješ
 date: 2025-03-15T18:00:00+01:00
 description: Připojte se k našemu prvnímu neformálnímu setkání ve formátu vyprávění příběhů
-tags: [meetup, občanská angažovanost, komunita, networking]
-categories: [akce]
 ---
 
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
