@@ -1,0 +1,58 @@
+[[main]]
+identifier = 'about'
+name = 'Who are we'
+pageRef = '/about'
+weight = 10
+[[main]]
+identifier = 'team'
+name = 'Our Team'
+pageRef = '/team'
+parent = 'about'  
+weight = 1
+[[main]]
+identifier = 'what_we_do'
+name = 'Events & news'
+pageRef = '/events-news'
+weight = 20
+[[main]]
+identifier = 'projects'
+name = 'Our projects'
+pageRef = '/projects'
+weight = 30
+[[main]]
+identifier = 'join_us'
+name = 'Get involved'
+pageRef = '/join-us'
+weight = 40
+[[main]]
+identifier = 'contact'
+name = 'Get in touch'
+pageRef = '/contact'
+weight = 50
+
+[[footer]]
+identifier = 'about_footer_group'
+name = 'About'
+weight = 10
+[[footer]]
+identifier = 'about'
+name = 'Who are we'
+pageRef = '/about'
+parent = 'about_footer_group'
+weight = 11
+[[footer]]
+identifier = 'team'
+name = 'Our Team'
+pageRef = '/team'
+parent = 'about_footer_group'
+weight = 12
+[[footer]]
+identifier = 'get_active'
+name = 'Get active'
+weight = 20
+[[footer]]
+identifier = 'join_us'
+name = 'Get involved'
+pageRef = '/join-us'
+parent= 'get_active'
+weight = 21

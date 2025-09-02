@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="single-page">
+    <div class="container">
+        <header class="page-header">
+            <h1>{{ .Title }}</h1>
+            {{ if .Date }}
+            <p class="page-meta">{{ .Date }}</p>
+            {{ end }}
+            {{ if .Description }}
+            <p class="page-description">{{ .Description }}</p>
+            {{ end }}
+        </header>
+        <div class="page-content">
+            <pre>This is generated using projects/page template.</pre>
+            <pre>{{ debug.Dump .}}</pre>
+            {{ .Content }}
+        </div>
+    </div>
+</article>
+{{ end }}
+
+

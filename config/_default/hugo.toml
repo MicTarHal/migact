@@ -22,62 +22,73 @@ disableKinds = ['taxonomy','term']
     [languages.en.params]
       description = 'Supporting civic engagement and community building for people with migration backgrounds in Prague'
       tagline = 'Creating Networks • Bridging the Gap • Strengthening Alliances • Unlocking the Potential'
-
+      
   [languages.cs]
     languageName = 'Čeština'
     title = 'MigAct - Podpora občanské angažovanosti'
     [languages.cs.params]
       description = 'Podpora občanské angažovanosti a budování komunity pro lidi s migračním pozadím v Praze'
       tagline = 'Vytváříme sítě • Překlenujeme rozdíly • Posilujeme spojenectví • Odemykáme potenciál'
-    
+
 [menus]
   [[menus.main]]
-    identifier = 'about'
-    pageRef = '/about'
-    weight = 10
+  identifier = 'about'
+  name = 'Who are we'
+  pageRef = '/about'
+  weight = 10
   [[menus.main]]
-    identifier = 'team'
-    pageRef = '/team'
-    parent = 'about'  
-    weight = 1
+  identifier = 'team'
+  name = 'Our Team'
+  pageRef = '/team'
+  parent = 'about'  
+  weight = 1
   [[menus.main]]
-    identifier = 'what_we_do'
-    pageRef = '/what-we-do'
-    weight = 20
+  identifier = 'what_we_do'
+  name = 'Events & news'
+  pageRef = '/events-news'
+  weight = 20
   [[menus.main]]
-    identifier = 'projects'
-    pageRef = '/projects'
-    weight = 30
+  identifier = 'projects'
+  name = 'Our projects'
+  pageRef = '/projects'
+  weight = 30
   [[menus.main]]
-    identifier = 'join-us'
-    pageRef = '/join-us'
-    weight = 40
+  identifier = 'join_us'
+  name = 'Get involved'
+  pageRef = '/join-us'
+  weight = 40
   [[menus.main]]
-    identifier = 'contact'
-    pageRef = '/contact'
-    weight = 50
+  identifier = 'contact'
+  name = 'Get in touch'
+  pageRef = '/contact'
+  weight = 50
 
   [[menus.footer]]
-    identifier = 'about_footer_group'
-    weight = 10
+  identifier = 'about_footer_group'
+  name = 'About'
+  weight = 10
   [[menus.footer]]
-    identifier = 'about'
-    pageRef = '/about'
-    parent = 'about_footer_group'
-    weight = 11
+  identifier = 'about'
+  name = 'Who are we'
+  pageRef = '/about'
+  parent = 'about_footer_group'
+  weight = 11
   [[menus.footer]]
-    identifier = 'team'
-    pageRef = '/team'
-    parent = 'about_footer_group'
-    weight = 12
+  identifier = 'team'
+  name = 'Our Team'
+  pageRef = '/team'
+  parent = 'about_footer_group'
+  weight = 12
   [[menus.footer]]
-    identifier = 'get_active'
-    weight = 20
+  identifier = 'get_active'
+  name = 'Get active'
+  weight = 20
   [[menus.footer]]
-    identifier = 'join-us'
-    pageRef = '/join-us'
-    parent= 'get_active'
-    weight = 21
+  identifier = 'join_us'
+  name = 'Get involved'
+  pageRef = '/join-us'
+  parent= 'get_active'
+  weight = 21
 
 [markup]
   [markup.goldmark]

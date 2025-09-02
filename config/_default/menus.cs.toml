@@ -1,0 +1,58 @@
+[[main]]
+identifier = 'about'
+pageRef = '/about'
+name = 'Kto jsme'
+weight = 10
+[[main]]
+identifier = 'team'
+name = 'Náš tým'
+pageRef = '/team'
+parent = 'about' 
+weight = 1
+[[main]]
+identifier = 'what_we_do'
+name = 'Události & novinky'
+pageRef = '/events-news'
+weight = 20
+[[main]]
+identifier = 'projects'
+name = 'Naše projekty'
+pageRef = '/projects'
+weight = 30
+[[main]]
+identifier = 'join_us'
+name = 'Přidejte se'
+pageRef = '/join-us'
+weight = 40
+[[main]]
+identifier = 'contact'
+name = 'Kontaktujte nás'
+pageRef = '/contact'
+weight = 50
+
+[[footer]]
+identifier = 'about_footer_group'
+name = 'O nás'
+weight = 10
+[[footer]]
+identifier = 'about'
+name = 'Kto jsme'
+pageRef = '/about'
+parent = 'about_footer_group'
+weight = 11
+[[footer]]
+identifier = 'team'
+name = 'Náš tým'
+pageRef = '/team'
+parent = 'about_footer_group'
+weight = 12
+[[footer]]
+identifier = 'get_active'
+name = 'Zapojte se'
+weight = 20
+[[footer]]
+identifier = 'join_us'
+name = 'Přidejte se'
+pageRef = '/join-us'
+parent= 'get_active'
+weight = 21
