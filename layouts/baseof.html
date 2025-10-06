@@ -5,39 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <link rel="stylesheet" href="css/style.css">
+    {{ with resources.Get "css/style.css" | resources.Minify }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     {{ if hugo.IsMultilingual }}
     {{ range .AllTranslations }}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
     {{ end }}
     {{ end }}
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav class="main-navigation">
-                <div class="logo">
-                    <a href="{{ .Site.BaseURL }}">
-                        <img src="/images/migact-logo.png" alt="{{ .Site.Title }}" class="logo-img">
-                    </a>
-                </div>
-                {{ partial "language-switcher.html" . }}
-                <ul class="nav-menu">
-                    {{ range .Site.Menus.main }}
-                    <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a>
-                    {{ if .HasChildren }}
-                        <ul>
-                            {{ range .Children }}
-                                <li><a href="{{ .URL }}" {{ if $.IsMenuCurrent "main" . }}class="active"{{ end }}>{{ .Name }}</a></li>
-                            {{ end }}
-                        </ul>
+            {{- with resources.Get "images/manual_logo.svg" }}
+                <a href="{{ $.Site.BaseURL }}">
+                    <img id="logo" src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}">
+                </a>
+            {{- end }}
+            {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
+            <nav class="lang-switcher" aria-label="Language selection">
+                {{ if .IsTranslated }}
+                    {{ range .Translations }}
+                        <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
+                        {{ .Language.LanguageName }}
+                        </a>
                     {{ end }}
-                    </li>
-                    {{ end }}
-                </ul>
+                {{ end }}
+                <a href="{{ .Permalink }}" class="active" lang="{{ .Language.Lang }}">
+                {{ .Language.LanguageName }}
+                </a>
             </nav>
         </div>
     </header>
