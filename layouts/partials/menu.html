@@ -2,7 +2,7 @@
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-<nav class="main-navigation" aria-label="Main navigation">
+<nav id="main-navigation" aria-label="Main navigation">
   <ul>
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>

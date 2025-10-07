@@ -116,12 +116,11 @@
      Header
      ============================================ */
   .site-header {
-    background: var(--color-white);
+    background: radial-gradient(ellipse at right bottom, var(--color-white), var(--color-yellow), var(--color-orange));
     border-bottom: 2px solid var(--color-orange);
   }
   
   .header-content {
-    max-width: var(--max-width);
     margin: 0 auto;
     padding: var(--spacing-sm);
     display: flex;
@@ -135,87 +134,94 @@
     width: 120px;
   }
   
-  /* Mobile Menu Toggle */
-  .menu-toggle {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: var(--spacing-xs);
-    z-index: 1001;
-  }
-  
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--color-black);
-    margin: 5px 0;
-    transition: var(--transition);
-  }
-  
-  .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-  
-  /* Navigation */
-  .main-nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 280px;
-    height: 100vh;
-    background: var(--color-white);
-    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
-    padding: calc(var(--header-height) + var(--spacing-md)) var(--spacing-md) var(--spacing-md);
-    transition: right var(--transition);
-    z-index: 1000;
-    overflow-y: auto;
-  }
-  
-  .main-nav.active {
-    right: 0;
-  }
-  
-  .main-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .main-nav li {
-    margin-bottom: var(--spacing-sm);
-  }
-  
-  .main-nav a {
-    display: block;
-    padding: var(--spacing-xs) 0;
-    color: var(--color-black);
-    font-size: var(--font-size-lg);
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-  }
-  
-  .main-nav a:hover,
-  .main-nav a.active {
-    color: var(--color-orange);
-    border-bottom-color: var(--color-orange);
-  }
-  
-  /* Language Switcher */
-  .lang-switcher {
+  /* Main navigation */
+  #menu-label {
     display: flex;
-    gap: var(--spacing-xs);
+    cursor: pointer;
+    align-items: center;
+    padding: 8px;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Button styling */
+  #menu-button,
+  #menu-button::before,
+  #menu-button::after  {
+    background-color: black;
+    height: 4px;
+    width: 32px;
+    border-radius: 3px;
   }
   
+  #menu-button{
+    position: relative;
+    display: inline-block;
+  }
+
+  #menu-button::before,
+  #menu-button::after  {
+    position: absolute;
+    transition: transform 0.2s ease;
+  }
+
+  #menu-button::before {
+    top: -8px;
+  }
+
+  #menu-button::after {
+    top: 8px;
+  }
+  /* Button behaviour */
+  #menu-toggle:checked + #menu-label #menu-button::before {
+    top: 0px;
+    transform: rotate(45deg);
+  }
+
+  #menu-toggle:checked + #menu-label #menu-button {
+    background: transparent;
+  }
+
+  #menu-toggle:checked + #menu-label #menu-button::after {
+    transform: rotate(-45deg);
+    bottom: 0px;
+  }
+
+	#main-navigation > ul {
+    display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#menu-toggle ~ .main-navigation > ul li {
+		height: 0;
+		margin: 0;
+		padding: 0;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	#menu-toggle:checked ~ .main-navigation > ul li {
+		height: 2.5em;
+		padding: 0.5em;
+		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+	}
+
+	.main-navigation > ul > li {
+		margin: 0;
+		padding: 0.5em 0;
+		width: 100%;
+		color: white;
+		background-color: var(--darkbg);
+	}
+
+	.main-navigation > ul > li > a {
+		width: 100%;
+	}
+  
+  /* Language Switcher */  
   .lang-switcher a {
     padding: var(--spacing-xs) var(--spacing-sm);
     background: var(--color-gray-light);
@@ -226,28 +232,11 @@
     text-transform: uppercase;
   }
   
-  .lang-switcher a:hover,
-  .lang-switcher a.active {
+  .lang-switcher a:hover {
     background: var(--color-orange);
     color: var(--color-white);
   }
-  
-  /* Menu Overlay */
-  .menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
-    z-index: 999;
-  }
-  
-  .menu-overlay.active {
-    display: block;
-  }
-  
+
   /* ============================================
      Hero Section
      ============================================ */
@@ -534,39 +523,23 @@
     .footer-content {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .main-navigation > ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-navigation > ul > li {
+      margin: 0 1rem;
+      overflow: hidden;
+    }
   }
   
   /* ============================================
      Desktop (1024px+)
      ============================================ */
   @media (min-width: 1024px) {
-    .menu-toggle {
-      display: none;
-    }
-    
-    .main-nav {
-      position: static;
-      width: auto;
-      height: auto;
-      background: none;
-      box-shadow: none;
-      padding: 0;
-      overflow: visible;
-    }
-    
-    .main-nav ul {
-      display: flex;
-      gap: var(--spacing-md);
-    }
-    
-    .main-nav li {
-      margin-bottom: 0;
-    }
-    
-    .main-nav a {
-      font-size: var(--font-size-base);
-      padding: var(--spacing-xs);
-    }
     
     .card-grid {
       grid-template-columns: repeat(3, 1fr);
