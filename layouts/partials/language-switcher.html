@@ -1,9 +1,0 @@
-{{ if .IsTranslated }}
-    {{ with .Translations }}
-    <div class="language-switcher">
-        {{ range . }}
-        <a href="{{ .RelPermalink }}" hreflang="{{ .Language.LanguageCode }}">{{ .Language.LanguageName }}</a>
-        {{ end }}
-    </div>
-    {{ end }}
-{{ end }}

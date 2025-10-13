@@ -159,7 +159,9 @@
 
   #main-navigation {
     position: absolute;
-    top: 100%;
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
     background: var(--color-white);
     transition: all var(--transition);
     z-index: 1;
@@ -177,9 +179,7 @@
   }
 
 	#menu-toggle:has(input:checked) ~ #main-navigation {
-    left: 0;
-    right: 0;
-    height: initial;
+    height: 100vh;
 	}
 
 	#main-navigation li > a {
