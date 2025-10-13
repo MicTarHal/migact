@@ -20,7 +20,6 @@
 </head>
 <body class="site-container">
     <header class="site-header">
-        <div class="header-content">
         {{- with resources.Get "images/manual_logo.svg" }}
             <a href="{{ $.Site.BaseURL }}">
                 <img id="logo" src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}">
@@ -28,18 +27,13 @@
         {{- end }}
         <label id='menu-toggle'>
             <input type="checkbox" />
+            <svg width="30" height="30">
+                <line class="top" x1="0" y1="5" x2="30" y2="5"/>
+                <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
+                <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
+            </svg>
         </label>
         {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
-        <nav class="lang-switcher" aria-label="Language selection">
-            {{ if .IsTranslated }}
-                {{ range .Translations }}
-                    <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
-                    {{ .Language.LanguageName }}
-                    </a>
-                {{ end }}
-            {{ end }}
-        </nav>
-    </div>
     </header>
     <main class="site-main">
         {{ block "main" . }}{{ end }}

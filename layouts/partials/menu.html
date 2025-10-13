@@ -6,6 +6,15 @@
   <ul>
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
+  {{- with $page }}
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+          <a href="{{ .Permalink }}" lang="{{ .Language.Lang }}">
+          {{ .Language.LanguageName }}
+          </a>
+      {{ end }}
+    {{ end }} 
+  {{- end }}
 </nav>
 {{- end }}
 

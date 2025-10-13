@@ -32,9 +32,10 @@
     
     /* Layout */
     --max-width: 1200px;
+    --min-width: 320px;
     --header-height: 70px;
     --border-radius: 8px;
-    --transition: 0.3s ease;
+    --transition: 0.5s ease;
   }
   
   /* ============================================
@@ -46,6 +47,7 @@
   
   html {
     font-size: 16px;
+    min-width: var(--min-width);
   }
   
   body {
@@ -95,22 +97,22 @@
   
   /* ============================================
      Layout Container
-     ============================================ */
-  .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 var(--spacing-sm);
-  }
   
   .site-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
   }
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+  }
   
   .site-main {
     flex: 1;
   }
+     ============================================ */
   
   /* ============================================
      Header
@@ -118,20 +120,16 @@
   .site-header {
     background: radial-gradient(ellipse at right bottom, var(--color-white), var(--color-yellow), var(--color-orange));
     border-bottom: 2px solid var(--color-orange);
-  }
-  
-  .header-content {
-    margin: 0 auto;
-    padding: var(--spacing-sm);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--spacing-sm);
-    min-height: var(--header-height);
+		justify-content: space-between;
+		align-items: center;
+		padding: 5%;
+    position: relative;
   }
   
   .site-header #logo {
-    width: 120px;
+    max-width: 30vw;
+    height: auto;
   }
   
   /* Main navigation */
@@ -140,81 +138,54 @@
     display: none;
   }
 
-  /* Button styling */
-  #menu-toggle,
-  #menu-toggle::before,
-  #menu-toggle::after  {
-    cursor: pointer;
-    background-color: black;
-    height: 4px;
-    width: 32px;
-    border-radius: 3px;
+  #menu-toggle svg line {
+    stroke: #000;
+    stroke-width: 3;
+    transition: transform 0.3s;
+    transform-origin: center;
   }
   
-  #menu-toggle {
-    position: relative;
+  #menu-toggle > input:checked ~ svg .top {
+    transform: rotate(45deg) translateY(10px);
+  }
+  
+  #menu-toggle > input:checked ~ svg .mid {
+    opacity: 0;
+  }
+  
+  #menu-toggle > input:checked ~ svg .bot {
+    transform: rotate(-45deg) translateY(-10px);
   }
 
-  #menu-toggle::before,
-  #menu-toggle::after  {
-    display: inline-block;
-    content: '';
+  #main-navigation {
     position: absolute;
-    transition: transform 0.2s ease;
+    top: 100%;
+    background: var(--color-white);
+    transition: all var(--transition);
+    z-index: 1;
+    overflow-y: auto;
+    height: 0;
   }
 
-  #menu-toggle::before {
-    top: -8px;
+	#main-navigation ul {
+    list-style-type: none;
   }
 
-  #menu-toggle::after {
-    top: 8px;
-  }
-  /* Button behaviour */
-  #menu-toggle:has(input:checked)::before {
-    top: 0px;
-    transform: rotate(45deg);
+  #main-navigation > ul {
+    padding: var(--spacing-md);
   }
 
-  #menu-toggle:has(input:checked) {
-    background: transparent;
-  }
-
-  #menu-toggle:has(input:checked)::after {
-    transform: rotate(-45deg);
-    top: 0px;
-  }
-
-	#main-navigation > ul {
-    display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
+	#menu-toggle:has(input:checked) ~ #main-navigation {
+    left: 0;
+    right: 0;
+    height: initial;
 	}
 
-	#menu-toggle ~ .main-navigation > ul li {
-		height: 0;
-		margin: 0;
-		padding: 0;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
-
-	#menu-toggle:has(input:checked) ~ .main-navigation > ul li {
-		height: 2.5em;
-		padding: 0.5em;
-		transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-	}
-
-	.main-navigation > ul > li {
-		margin: 0;
-		padding: 0.5em 0;
-		width: 100%;
-		color: white;
-		background-color: var(--darkbg);
-	}
-
-	.main-navigation > ul > li > a {
-		width: 100%;
+	#main-navigation li > a {
+		display: block;
+    padding: var(--spacing-sm) var(--spacing-sm);
+    border-bottom: 1px solid var(--color-black);
+    font: var(--font-size-xl) bold;
 	}
   
   /* Language Switcher */  
@@ -501,7 +472,7 @@
   
   /* ============================================
      Tablet (768px+)
-     ============================================ */
+     ============================================ 
   @media (min-width: 768px) {
     :root {
       --font-size-3xl: 3.5rem;
@@ -534,7 +505,7 @@
   
   /* ============================================
      Desktop (1024px+)
-     ============================================ */
+     ============================================ 
   @media (min-width: 1024px) {
     
     .card-grid {
@@ -544,4 +515,4 @@
     .hero {
       padding: calc(var(--spacing-xl) * 2) 0;
     }
-  }
+  }*/
