@@ -1,5 +1,6 @@
 ---
 title: Pathways to Civic Integration of Residents with Migrant Backgrounds
+status: ongoing
 ---
 
 This project aims to identify good examples of how residents with migrant backgrounds can become involved in local civic life in Prague 7. It will begin with research, followed by community meetings where people can work together to find helpful ideas and tools.

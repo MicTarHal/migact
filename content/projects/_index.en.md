@@ -1,5 +1,3 @@
 ---
-title: Our projects
+title: Projects
 ---
-
-Project list
