@@ -1,0 +1,7 @@
+<article class="member">
+  <h2>{{ .Title }}</h2>
+  <h6>{{ .Params.position }}</h6>
+  <a>{{ .Params.contact }}</a>
+  <p>{{ or .Params.image "Empty" }}</p>
+  {{ .Content }}
+</article>

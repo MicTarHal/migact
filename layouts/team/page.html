@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main id="team">
+    {{ range .Resources.ByType "page" }}
+        {{ .Render "view_team" }}
+    {{ end }}
+</main>
+{{ end }}
