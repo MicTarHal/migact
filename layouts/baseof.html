@@ -21,7 +21,7 @@
 <body class="site-container">
     <header class="site-header">
         {{- with resources.Get "images/manual_logo.svg" }}
-            <a href="{{ $.Site.Home.RelPermalink }}">
+            <a href="{{ $.Site.Home.RelPermalink }}" alt="{{ i18n "home" | default "Home" }}">
                 <img id="logo" src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}">
             </a>
         {{- end }}
