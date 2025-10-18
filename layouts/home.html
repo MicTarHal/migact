@@ -1,5 +1,38 @@
 {{ define "main" }}
 <main id="home">
-  {{ .Content }}
+  {{ with .Page.GetPage "/home-sections" }}
+    {{ $page := . }}
+    {{ with .Resources.Get "about.md" }}
+  <section id="about">
+      {{ with $page.Resources.Get .Params.image }}
+    <img src="{{ .RelPermalink }}"/>
+      {{ end }}
+    <div>
+      {{ .Content }}
+    </div>
+  </section>
+    {{ end }}
+    {{ with .Resources.Match "activities/*" }}
+  <section id="activities">
+    {{ $page.Content }}
+    <dl>
+      {{ range . }}
+      <div>
+        {{ with $page.Resources.Get .Params.image }}
+        <img src="{{ .RelPermalink }}"/>
+        {{ end }}
+        <dt>{{ .Title }}</dt>
+        <dd>{{ .Content }}</dd>
+      </div>
+      {{ end }}
+    </dl>
+  </section>
+    {{ end }}
+    {{ with .Resources.Get "involvement.md" }}
+  <section id="involvement">
+      {{ .Content }}
+  </section>
+    {{ end }}
+  {{ end }} 
 </main>
 {{ end }}
