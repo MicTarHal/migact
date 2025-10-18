@@ -7,13 +7,13 @@ disableKinds = ['taxonomy','term']
 
 [params]
   [params.contact]
-    phone = '+420 774 324 035'
+    phone = '+420 774 324 035'
     email = 'contact@migact.net'
-    [params.contact.address]
-      office = 'Revoluční 762/13, Prague, 110 00'
-      registration = 'Světova 523/1, Praha 8'
     ico = '19843631'
     databox = 'fdxji3v'
+    [params.contact.address]
+      office = 'Revoluční 762/13, Praha 1, 110 00'
+      registration = 'Světova 523/1, Praha 8'
 
 [languages]
   [languages.en]
@@ -23,7 +23,6 @@ disableKinds = ['taxonomy','term']
     weight = 1
     [languages.en.params]
       description = 'Supporting civic engagement and community building for people with migration backgrounds in Prague'
-      tagline = 'Creating Networks • Bridging the Gap • Strengthening Alliances • Unlocking the Potential'
       
   [languages.cs]
     languageName = 'Čeština'
@@ -32,7 +31,6 @@ disableKinds = ['taxonomy','term']
     weight = 2
     [languages.cs.params]
       description = 'Podpora občanské angažovanosti a budování komunity pro lidi s migračním pozadím v Praze'
-      tagline = 'Vytváříme sítě • Překlenujeme rozdíly • Posilujeme spojenectví • Odemykáme potenciál'
 
 
 [markup]

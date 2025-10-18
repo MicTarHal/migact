@@ -7,3 +7,12 @@ home: Home
 # Footer
 about_footer_group: About
 get_active: Get active
+
+# Contact page
+phone: Phone
+email: Email
+address: Address
+schedule: Office hours
+appointment: By appointment
+ico: ICO
+databox: Data box
