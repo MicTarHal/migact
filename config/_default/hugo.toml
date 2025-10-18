@@ -53,3 +53,20 @@ disableKinds = ['taxonomy','term']
 [taxonomies]
   tag = 'tags'
   category = 'categories'
+
+[[cascade]]
+  [build]
+    list = 'local'
+    render = 'link'
+  [cascade.target]
+    path = '{/events-news/news,/events-news/events}'
+
+[[cascade]]
+  type = "news"
+  [cascade.target]
+    path = '/events-news/news/**'
+
+[[cascade]]
+  type = "events"
+  [cascade.target]
+    path = '/events-news/events/**'

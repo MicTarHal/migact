@@ -1,0 +1,16 @@
+<article class="card">
+    {{ with resources.Get .Params.image }}
+        <img src="{{ .RelPermalink }}" alt="{{ .Title }}" class="card-image">
+      {{ else }}
+        <div class="card-image"></div>
+      {{ end }}
+    
+    <div class="card-content">
+      <h3 class="card-title">{{ .Title }}</h3>
+      <p class="card-meta">{{ .Date.Format "January 2, 2006" }}</p>
+      <p>{{ .Summary }}</p>
+      <a href="{{ .RelPermalink }}" class="card-link">
+        {{ i18n "read_more" | default "Read more" }}
+      </a>
+    </div>
+</article>

@@ -1,6 +1,4 @@
 ---
-title: Udalosti a novinky
-url: udalosti-novinky
+title: Události a zprávy
+url: udalosti-zpravy
 ---
-
-Udalosti cesky

@@ -1,5 +1,25 @@
 {{ define "main" }}
-<main id="events">
-    
+<main id="event-news">
+    {{ with where .Pages "Type" "news" }}
+    <section id="news" class="grid-section">
+      <h2>{{ i18n "news" | default "News" }}</h2>
+      <div class="card-grid">
+        {{ range . }}
+            {{ .Render "view_news" }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
+
+    {{ with where .Pages "Type" "events" }}
+    <section id="events" class="grid-section">
+      <h2>{{ i18n "events" | default "Events" }}</h2>
+      <div class="card-grid">
+        {{ range . }}
+            {{ .Render "view_event" }}
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
 </main>
 {{ end }}

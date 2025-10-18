@@ -11,7 +11,7 @@ parent = 'about'
 weight = 1
 [[main]]
 identifier = 'what_we_do'
-name = 'Události & novinky'
+name = 'Události & zprávy'
 pageRef = '/events-news'
 weight = 20
 [[main]]
