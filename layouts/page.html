@@ -1,5 +1,6 @@
 {{ define "main" }}
 <article class="single-page">
+    <pre>{{ debug.Dump .Site.Pages }}</pre>
     <div class="container">
         <header class="page-header">
             <h1>{{ .Title }}</h1>
@@ -16,5 +17,3 @@
     </div>
 </article>
 {{ end }}
-
-

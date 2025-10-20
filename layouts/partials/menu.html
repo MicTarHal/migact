@@ -36,11 +36,6 @@
       {{- $attrs = merge $attrs (dict "class" "ancestor" "aria-current" "true") }}
     {{- end }}
     {{- $name := .Name }}
-    {{- with .Identifier }}
-      {{- with T . }}
-        {{- $name = . }}
-      {{- end }}
-    {{- end }}
     <li>
       <a
         {{- range $k, $v := $attrs }}
