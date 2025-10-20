@@ -48,53 +48,16 @@
  
  body > header,
  body > main,
- body > footer {
-   margin-right: auto;
-   margin-left: auto;
-   padding: 1rem;
+ body > footer,
+ .container {
+  margin: 0 auto;
+  padding: 1rem;
  }
- @media (min-width: 576px) {
-   body > main {
-     max-width: 510px;
-     padding-right: 0;
-     padding-left: 0;
-   }
+ 
+ body > main,
+ .container {
+   max-width: 90%;
  }
- @media (min-width: 768px) {
-   body > main {
-     max-width: 700px;
-   }
- }
- @media (min-width: 1024px) {
-  body > main {
-     max-width: 950px;
-   }
- }
- @media (min-width: 1280px) {
-  body > main {
-     max-width: 1200px;
-   }
- }
- @media (min-width: 1536px) {
-  body > main {
-     max-width: 1450px;
-   }
- }
-
- /* Activities at home page */
-#activities > dl {
-  display: flex;
-}
-
-#activities > dl > div {
-  margin: 0 2rem;
-}
-
-#activities img {
-  height: 5rem;
-  margin: 2rem auto;
-  display: block;
-}
 
  dt {
   font-weight: bold;
@@ -104,6 +67,47 @@
  dd {
   margin: 0;
  }
+
+ /* Home page */
+ #about > img {
+  width: 100%;
+  object-fit:contain;
+ }
+
+ @media (min-width: 1024px){
+  #about {
+    display: flex;
+    align-items: stretch;
+    gap: 1rem;
+   }
+ 
+  #about > img {
+   width: 50%;
+  }
+
+  #about > div {
+    flex: 1;
+   }
+ }
+
+ #activities {
+  text-align: center;
+ }
+
+#activities > dl > div {
+  margin: 0 1rem;
+}
+
+#activities img {
+  height: 8rem;
+  margin: 1rem auto;
+  display: block;
+}
+@media (min-width: 1024px){
+  #activities > dl {
+    display: flex;
+  }
+}
 
  /* Contact */
  #contacts-container {
@@ -130,24 +134,31 @@
   opacity: 0.85;
 }
   
+.container {
+  display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 1rem;
+}
   /* ============================================
      Header
      ============================================ */
   .site-header {
     background: radial-gradient(ellipse at right bottom, var(--color-bg), var(--color-primary));
     border-bottom: 2px solid var(--color-primary);
-    display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 5%;
     position: relative;
   }
   
   .site-header #logo {
     display: block;
-    max-width: 30vw;
-    height: auto;
+    max-height: 3rem;
     margin: 0;
+  }
+
+  @media (min-width: 1024px){
+    #activities > dl {
+      display: flex;
+    }
   }
   
   /* Main navigation */

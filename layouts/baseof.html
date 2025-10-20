@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} - {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    {{ with resources.Get "css/style.css" | resources.Minify }}
-        <link rel="stylesheet" href="{{ .RelPermalink }}">
-    {{ end }}
+        <link rel="stylesheet" href='{{ (resources.Get "css/style.css" | resources.Minify).RelPermalink }}'>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,22 +16,22 @@
     {{ end }}
     {{ end }}
 </head>
-<body class="site-container">
+<body>
     <header class="site-header">
-        {{- with resources.Get "images/manual_logo.svg" }}
-            <a href="{{ $.Site.Home.RelPermalink }}" alt="{{ i18n "home" | default "Home" }}">
-                <img id="logo" src="{{ .RelPermalink }}" alt="{{ $.Site.Title }}">
+        <div class="container">
+            <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+                <img id="logo" src='{{ (resources.Get "images/manual_logo.svg").RelPermalink }}' alt="{{ $.Site.Title }}">
             </a>
-        {{- end }}
-        <label id='menu-toggle'>
-            <input type="checkbox" />
-            <svg width="30" height="30">
-                <line class="top" x1="0" y1="5" x2="30" y2="5"/>
-                <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
-                <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
-            </svg>
-        </label>
-        {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
+            <label id='menu-toggle'>
+                <input type="checkbox" />
+                <svg width="30" height="30">
+                    <line class="top" x1="0" y1="5" x2="30" y2="5"/>
+                    <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
+                    <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
+                </svg>
+            </label>
+            {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
+        </div>
     </header>
     {{ block "main" . }}{{ end }}
     <footer id="site-footer">
