@@ -7,6 +7,8 @@ home: Home
 # Footer
 about_footer_group: About
 get_active: Get active
+copyright: Copyright %v %s
+motto: We strive towards an inclusive and diverse civil society.
 
 # Contact page
 phone: Phone

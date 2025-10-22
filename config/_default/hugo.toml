@@ -1,6 +1,4 @@
 baseURL = 'https://migact.net'
-languageCode = 'en-us'
-title = 'MigAct - Support of Civic Engagement'
 defaultContentLanguage = 'en'
 enableRobotsTXT = true
 disableKinds = ['taxonomy','term']

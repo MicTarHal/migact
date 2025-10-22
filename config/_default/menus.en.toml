@@ -56,3 +56,18 @@ name = 'Get involved'
 pageRef = '/join-us'
 parent= 'get_active'
 weight = 21
+[[footer]]
+name = 'Attend events'
+pageRef = '/events-news'
+parent= 'get_active'
+weight = 22
+[[footer]]
+name = 'Get in touch'
+pageRef = '/contact'
+parent= 'get_active'
+weight = 23
+[[footer]]
+name = 'Donate'
+url = 'https://www.darujme.cz/projekt/1210263?locale=en'
+parent= 'get_active'
+weight = 24
