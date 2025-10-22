@@ -18,20 +18,18 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container">
-            <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
-                <img id="logo" src='{{ (resources.Get "images/manual_logo.svg").RelPermalink }}' alt="{{ $.Site.Title }}">
-            </a>
-            <label id='menu-toggle'>
-                <input type="checkbox" />
-                <svg width="30" height="30">
-                    <line class="top" x1="0" y1="5" x2="30" y2="5"/>
-                    <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
-                    <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
-                </svg>
-            </label>
-            {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
-        </div>
+        <a href="{{ $.Site.Home.RelPermalink }}" alt='{{ i18n "home" }}'>
+            <img id="logo" src='{{ (resources.Get "images/manual_logo.svg").RelPermalink }}' alt="{{ $.Site.Title }}">
+        </a>
+        <label id='menu-toggle'>
+            <input type="checkbox" />
+            <svg width="30" height="30">
+                <line class="top" x1="0" y1="5" x2="30" y2="5"/>
+                <line class="mid" x1="0" y1="15" x2="30" y2="15"/>
+                <line class="bot" x1="0" y1="25" x2="30" y2="25"/>
+            </svg>
+        </label>
+        {{- partial "menu.html" (dict "menuID" "main" "page" .) }}
     </header>
     {{ block "main" . }}{{ end }}
     <footer id="site-footer">

@@ -5,6 +5,7 @@
   --color-primary-visited: #f37c14;
   --color-accent: #548feb;
   --color-muted: #f1f1f1;
+  --logo-height: 3rem;
  }
  /* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/  
 
@@ -44,20 +45,12 @@
 
  body{
   margin:0;
+  min-width: 360px;
  }
- 
- body > header,
- body > main,
- body > footer,
- .container {
-  margin: 0 auto;
-  padding: 1rem;
- }
- 
- body > main,
- .container {
-   max-width: 90%;
- }
+
+body > header, body > main {
+  padding-inline: 5%;
+}
 
  dt {
   font-weight: bold;
@@ -72,6 +65,7 @@
  #about > img {
   width: 100%;
   object-fit:contain;
+  margin-top: 2rem;
  }
 
  @media (min-width: 1024px){
@@ -133,26 +127,22 @@
   margin-bottom: 0.5rem;
   opacity: 0.85;
 }
-  
-.container {
-  display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: 0 1rem;
-}
   /* ============================================
      Header
      ============================================ */
   .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: radial-gradient(ellipse at right bottom, var(--color-bg), var(--color-primary));
     border-bottom: 2px solid var(--color-primary);
     position: relative;
+    padding-block: calc(var(--logo-height) / 2);
   }
   
   .site-header #logo {
     display: block;
-    max-height: 3rem;
-    margin: 0;
+    max-height: var(--logo-height);
   }
 
   @media (min-width: 1024px){
@@ -408,11 +398,7 @@
   /* ============================================
      Tablet (768px+)
      ============================================ */
-  @media (min-width: 768px) {    
-    .container {
-      padding: 0 2rem;
-    }
-    
+  @media (min-width: 768px) {
     .card-grid {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -440,9 +426,5 @@
     .main-navigation > ul > li {
       margin: 0 1rem;
       overflow: hidden;
-    }
-
-    .site-header {
-      padding: 2%;
     }
   }
