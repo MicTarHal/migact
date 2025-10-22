@@ -103,6 +103,41 @@ body > header, body > main {
   }
 }
 
+#actions ul {
+  list-style-type: none;
+  display: grid;
+  gap: 1rem;
+  padding-left: 0;
+}
+
+#actions > ul {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#actions a {
+  text-decoration:none;
+  background:white;
+  border-radius: 12px;
+  padding: 1rem 0;
+  text-align:center;
+  font-weight:600;
+  color:var(--color-accent);
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+  transition:transform .14s ease,box-shadow .14s ease;
+  display: block;
+}
+#actions a:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,23,42,0.08)}
+#donate a {color:var(--color-primary-visited)}
+#donate, #socials {
+  grid-column: 1/4;
+}
+#involvement {
+  text-align: center;
+}
+#socials > ul {
+  grid-template-columns: repeat(3, 1fr);
+}
+
  /* Contact */
  #contacts-container {
   display: grid;
@@ -111,6 +146,11 @@ body > header, body > main {
   margin: 0;
   padding: 0;
   font-style: normal; /* if inside <address> */
+}
+@media (min-width: 768px){
+  #contacts-container {
+   grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 #contacts-container > div {
@@ -272,7 +312,7 @@ body > header, body > main {
   }
   
   .card-meta {
-    font-size: var(--font-size-sm);
+    font-size: 1rem;
     color: var(--color-gray);
     margin-bottom: 1rem;
   }
@@ -282,7 +322,7 @@ body > header, body > main {
     font-weight: 600;
     display: inline-flex;
     align-items: center;
-    gap: var(--spacing-xs);
+    gap: 1rem;
   }
   
   .card-link:hover {

@@ -14,6 +14,10 @@ disableKinds = ['taxonomy','term']
     [params.contact.address]
       office = 'Revoluční 762/13, Praha 1, 110 00'
       registration = 'Světova 523/1, Praha 8'
+  [params.socials]
+    facebook = 'https://www.facebook.com/migactinitiative'
+    instagram = 'https://www.instagram.com/mig.act/'
+    linkedin = 'https://www.linkedin.com/company/migact-initiative/'
 
 [languages]
   [languages.en]
