@@ -15,7 +15,7 @@
     {{ with .Resources.Match "activities/*" }}
   <section id="activities">
     {{ $page.Content }}
-    <dl>
+    <dl class="cards">
       {{ range . }}
       <div>
         {{ with $page.Resources.Get .Params.image }}

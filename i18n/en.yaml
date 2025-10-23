@@ -4,6 +4,14 @@ news: News
 events: Events
 home: Home
 
+# Card
+date: When
+time: At
+location: Where
+registration: Registration
+tba: To be announced
+signup: Sign up here
+
 # Footer
 about_footer_group: About
 get_active: Get active

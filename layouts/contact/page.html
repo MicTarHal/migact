@@ -3,7 +3,7 @@
     <h1>{{ .Title }}</h1>
     <h2>{{ .Description }}</h2>
     <address>
-        <dl id="contacts-container">
+        <dl id="contacts-container" class="cards">
             <div>
                 <img src='{{ (.Resources.Get "phone.svg").RelPermalink }}' />
                 <dt>{{ i18n "phone" }}</dt>

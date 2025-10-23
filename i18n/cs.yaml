@@ -4,6 +4,14 @@ news: Zprávy
 events: Události
 home: Domov
 
+# Card
+date: Kdy
+time: O
+location: Kde
+registration: Registrace
+tba: Bude oznameno
+signup: Prihlaste se zde
+
 # Footer
 about_footer_group: O nás
 get_active: Zapojte se

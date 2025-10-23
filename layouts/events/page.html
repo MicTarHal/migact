@@ -1,74 +1,25 @@
 {{ define "main" }}
-
-<article class="section">
-  <div class="container" style="max-width: 800px;">
-    <header style="margin-bottom: var(--spacing-lg);">
-      <h1 style="margin-bottom: var(--spacing-sm);">{{ .Title }}</h1>
-      
-      <div style="color: var(--color-gray); font-size: var(--font-size-sm); margin-bottom: var(--spacing-md);">
-        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
-        
-        {{ if .Params.status }}
-          <span style="margin-left: var(--spacing-sm); padding: var(--spacing-xs) var(--spacing-sm); background: var(--color-gray-light); border-radius: var(--border-radius);">
-            {{ .Params.status }}
-          </span>
-        {{ end }}
-        
-        {{ if .Params.type }}
-          <span style="margin-left: var(--spacing-sm); padding: var(--spacing-xs) var(--spacing-sm); background: var(--color-blue); color: var(--color-white); border-radius: var(--border-radius);">
-            {{ .Params.type }}
-          </span>
-        {{ end }}
-      </div>
-      
-      {{ with .Params.event_date }}
-        <p style="color: var(--color-teal); font-weight: 600;">
-          📅 Event Date: {{ dateFormat "January 2, 2006 15:04" . }}
-        </p>
-      {{ end }}
-      
+<main id="event">
+  <dl class="attributes">
+    <dt>📅 {{ i18n "date" }}</dt><dd>{{ default ( i18n "tba" ) (.Params.date | time.Format ":date_full") }}</dd>
+    <dt>🕔 {{ i18n "time" }}</dt><dd>{{ default ( i18n "tba" ) (.Params.time) }}</dd>
+    <dt>📍 {{ i18n "location" }}</dt>
       {{ with .Params.location }}
-        <p style="color: var(--color-teal);">
-          📍 Location: {{ . }}
-        </p>
-      {{ end }}
-      
-      {{ with .Params.lead }}
-        <p style="color: var(--color-gray);">
-          Project Lead: {{ . }}
-        </p>
-      {{ end }}
-      
-      {{ with .Params.image }}
-        {{ $img := resources.Get . }}
-        {{ if $img }}
-          {{ $resized := $img.Resize "1200x" }}
-          <img src="{{ $resized.RelPermalink }}" alt="{{ $.Title }}" style="width: 100%; border-radius: var(--border-radius); margin-top: var(--spacing-md);">
-        {{ end }}
-      {{ end }}
-    </header>
-    
-    <div class="content" style="line-height: var(--line-height-base);">
-      {{ .Content }}
-    </div>
-    
-    {{ with .Params.tags }}
-      <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-md); border-top: 1px solid var(--color-gray-light);">
-        <strong>Tags:</strong>
         {{ range . }}
-          <span style="display: inline-block; margin: var(--spacing-xs); padding: var(--spacing-xs) var(--spacing-sm); background: var(--color-gray-light); border-radius: var(--border-radius); font-size: var(--font-size-sm);">
+          <dd>
             {{ . }}
-          </span>
+          </dd>
         {{ end }}
-      </div>
+      {{ else }}
+      <dd>{{ i18n "tba" }}</dd>
+      {{ end }}
+    {{ with .Params.registration }}
+    <dt>📝 {{ i18n "registration" }}</dt><dd><a href="{{ . }}">{{ i18n "signup" }}</a></dd>
     {{ end }}
-    
-    <div style="margin-top: var(--spacing-lg); text-align: center;">
-      <a href="{{ .Section | relLangURL }}" class="btn">
-        ← Back to {{ .Section | humanize }}
-      </a>
-    </div>
-  </div>
-</article>
-
+  </dl>
+  <section>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </section>
+</main>
 {{ end }}
