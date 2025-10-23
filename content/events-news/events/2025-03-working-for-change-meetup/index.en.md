@@ -3,12 +3,13 @@ title: Meetup – Working for change in your country of origin, while also makin
 date: 2025-03-15T18:00:00+01:00
 description: Join our first informal storytelling meetup on civic engagement topics
 ---
-
 Join the first event of a new series of informal meetings. In a storytelling format we will engage in discussions, activities, community coaching, and networking on topics related to civic participation and experiences of foreigners living in Prague.
 
 **Bring your friends**  
 **Bring your ideas**  
 **Join the conversation!**
+
+<!--more-->
 
 ## First Topic: How to work for change in your country of origin and make a difference where you live
 
