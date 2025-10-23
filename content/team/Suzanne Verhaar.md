@@ -2,7 +2,7 @@
 title: Suzanne Verhaar
 params:
     position: Social Media Manager
-    photo: /images/team/suzanne-verhaar.jpg
+    photo: images/natallia-allen.jpg
     contact: suzanne@migact.net
 weight: 11
 ---

@@ -2,7 +2,7 @@
 title: Ben Curtis
 params:
     position: Board Member, researcher
-    photo: /images/team/ben-curtis.jpg
+    photo: images/natallia-allen.jpg
     contact: ben@migact.net
 weight: 4
 ---

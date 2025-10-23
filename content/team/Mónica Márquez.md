@@ -2,7 +2,7 @@
 title: Mónica Márquez
 params:
     position: Co-Director
-    photo: /images/team/monica-marquez.jpg
+    photo: images/natallia-allen.jpg
     contact: monica@migact.net
 weight: 2
 ---

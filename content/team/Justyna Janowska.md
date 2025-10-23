@@ -2,7 +2,7 @@
 title: Justyna Janowska
 params:
     position: Co-Founder and MigAct member
-    photo: /images/team/justyna-janowska.jpg
+    photo: images/natallia-allen.jpg
     contact: justyna@migact.net
 weight: 7
 ---

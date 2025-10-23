@@ -2,7 +2,7 @@
 title: Daniel Mitev
 params:
     position: Multimedia Designer, MigAct member
-    photo: /images/team/daniel-mitev.jpg
+    photo: images/natallia-allen.jpg
     contact: hi@danielmevit.com
 weight: 8
 ---

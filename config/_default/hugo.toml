@@ -1,6 +1,7 @@
 baseURL = 'https://migact.net'
 defaultContentLanguage = 'en'
 enableRobotsTXT = true
+timeZone = 'Europe/Prague'
 disableKinds = ['taxonomy','term']
 
 [params]

@@ -2,7 +2,7 @@
 title: Marina Puzdrova
 params:
     position: Board member
-    photo: /images/team/marina-puzdrova.jpg
+    photo: images/natallia-allen.jpg
     contact: marina@migact.net
 weight: 1
 ---

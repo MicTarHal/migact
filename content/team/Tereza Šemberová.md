@@ -2,7 +2,7 @@
 title: Tereza Šemberová
 params:
     position: Financial manager
-    photo: /images/team/tereza-semberova.jpg
+    photo: images/natallia-allen.jpg
     contact: tereza@migact.net
 weight: 10
 ---

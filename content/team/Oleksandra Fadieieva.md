@@ -2,7 +2,7 @@
 title: Oleksandra Fadieieva
 params:
     position: MigAct member
-    photo: /images/team/oleksandra-fadieieva.jpg
+    photo: images/natallia-allen.jpg
     contact: oleksandra@migact.net
 weight: 9
 ---

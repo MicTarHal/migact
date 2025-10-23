@@ -2,7 +2,7 @@
 title: Leslie Nicholson
 params:
     position: Board Member
-    photo: /images/team/leslie-nicholson.jpg
+    photo: images/natallia-allen.jpg
     contact: leslie@migact.net
 weight: 5
 ---

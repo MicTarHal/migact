@@ -2,7 +2,7 @@
 title: Nastassia Anishchanka
 params:
     position: Coordinator of the Community Organizer Training Program
-    photo: /images/team/nastassia-anishchanka.jpg
+    photo: images/natallia-allen.jpg
     contact: nastassia@migact.net
 weight: 6
 ---

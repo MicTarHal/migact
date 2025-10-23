@@ -2,7 +2,7 @@
 title: Natallia Allen
 params:
     position: Co-Director
-    photo: /images/team/natallia-allen.jpg
+    photo: images/natallia-allen.jpg
     contact: natallia@migact.net
 weight: 10
 ---

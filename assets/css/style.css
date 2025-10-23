@@ -60,6 +60,11 @@ body > header, body > main, body > footer {
  dd {
   margin: 0;
  }
+ img,
+ picture,
+ video {
+   max-width: 100%;
+ }
 
   /* ============================================
      Header Footer
@@ -112,6 +117,7 @@ body > header, body > main, body > footer {
       border-top: 1px solid var(--color-text);
       font-size: .5rem;
       color: var(--color-text);
+      margin-block-end: 0;
     }
 
     
@@ -379,17 +385,12 @@ body > header, body > main, body > footer {
     text-align: center;
   }
   
-  .member-image {
+  .member > img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 40%;
     margin: 0 auto 1rem;
     object-fit: cover;
-  }
-  
-  .member-role {
-    color: var(--color-text);
-    margin-bottom: 1rem;
   }
   
   /* ============================================
