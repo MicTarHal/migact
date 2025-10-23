@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="event-news">
     {{ with where .Pages "Type" "news" }}
-    <section id="news" class="grid-section">
+    <section id="news">
       <h2>{{ i18n "news" }}</h2>
       <div class="card-grid">
         {{ range . }}
@@ -12,7 +12,7 @@
     {{ end }}
 
     {{ with where .Pages "Type" "events" }}
-    <section id="events" class="grid-section">
+    <section id="events">
       <h2>{{ i18n "events" }}</h2>
       <div class="card-grid">
         {{ range . }}
