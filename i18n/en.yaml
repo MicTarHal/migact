@@ -4,7 +4,13 @@ news: News
 events: Events
 home: Home
 
-# Card
+# Project
+finished: Finished
+ongoing: Ongoing
+duration: Duration
+donors: Donors
+
+# Event
 date: When
 time: At
 location: Where

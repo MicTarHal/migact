@@ -4,7 +4,13 @@ news: Zprávy
 events: Události
 home: Domov
 
-# Card
+# Project
+finished: Ukoncen
+ongoing: Probiha
+duration: Realizace
+donors: Sponzori
+
+# Event
 date: Kdy
 time: O
 location: Kde
