@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main id="event">
+<main>
   <dl class="attributes">
     <dt>📅 {{ i18n "date" }}</dt><dd>{{ default ( i18n "tba" ) (.Params.date | time.Format ":date_full") }}</dd>
     <dt>🕔 {{ i18n "time" }}</dt><dd>{{ default ( i18n "tba" ) (.Params.time) }}</dd>
