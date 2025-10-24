@@ -1,6 +1,10 @@
 ---
 title: Pathways to Civic Integration of Residents with Migrant Backgrounds
-status: ongoing
+params:
+    status: ongoing
+    start_date: 2025-04-01
+    end_date: 2025-09-30
+    donors: [Ministry of the Interior of the Czech Republic, Prague 7 Municipal District]
 ---
 
 This project aims to identify good examples of how residents with migrant backgrounds can become involved in local civic life in Prague 7. It will begin with research, followed by community meetings where people can work together to find helpful ideas and tools.

@@ -1,6 +1,7 @@
 ---
 title: UNITES
-status: ongoing
+params:
+    status: finished
 ---
 
 Led by Eurocities, UNITES (UrbaN InTEgration Strategies through co-design) trains and accompanies local authorities to co-design integration strategies with other stakeholders and migrants.
