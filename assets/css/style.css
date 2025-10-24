@@ -264,7 +264,7 @@ body > main {
     transform: rotate(-45deg) translateY(-10px);
   }
 
-  #main-navigation {
+  #nav-panel {
     position: absolute;
     top: calc(100% + 1px);
     left: 0;
@@ -276,24 +276,24 @@ body > main {
     height: 0;
   }
 
-	#main-navigation ul {
+	#nav-panel ul {
     list-style-type: none;
     margin: 0;
   }
 
-  #main-navigation > ul {
-    padding: 0 2rem;
+  #site-nav {
+    padding: 0 5%;
+    font: 1.5rem bold;
   }
 
-	#menu-toggle:has(input:checked) ~ #main-navigation {
+	#menu-toggle:has(input:checked) ~ #nav-panel {
     height: 100vh;
 	}
 
-	#main-navigation li > a {
+	#site-nav a {
 		display: block;
     padding: 1rem;
     border-bottom: 1px solid black;
-    font: 1.5rem bold;
 	}
   
   /* Language Switcher */
@@ -383,13 +383,61 @@ body > main {
      Tablet (768px+)
      ============================================ */
   @media (min-width: 768px) {
+    #menu-toggle {
+      display: none;
+    }
+
+    #nav-panel{
+      position: revert;
+      background: revert;
+      height: revert;
+      display: flex;
+    }
+
+    #site-nav {
+      display: flex;
+      font-size: revert;
+    }
+
+    #site-nav li > ul {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 0px;
+    }
+
+    #site-nav a {
+      border: revert;
+    }
+
+    #site-nav li:has(ul):hover > ul {
+      display: block;
+    }
+
     .card-grid {
       grid-template-columns: repeat(2, 1fr);
     }
     
-    .footer-content {
-      grid-template-columns: repeat(2, 1fr);
+    #site-footer {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: 1fr auto;
     }
+    
+    #footer-copyright {
+      grid-row: 2;
+      grid-column: 1/7;
+    }
+    
+    #footer-content {
+      grid-column: 1 / 4;
+    }
+    
+    div.footer-link-group:nth-child(2) {
+      grid-column: 5;
+    }
+    
   }
   
   /* ============================================
@@ -401,20 +449,9 @@ body > main {
       grid-template-columns: repeat(3, 1fr);
     }
 
-    .main-navigation > ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+    main:has(>.attributes) {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 5%;
     }
-
-    .main-navigation > ul > li {
-      margin: 0 1rem;
-      overflow: hidden;
-    }
-
-  main:has(>.attributes) {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 5%;
-  }
   }
