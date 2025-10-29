@@ -9,38 +9,9 @@
  }
  /* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/  
 
- @media (min-width: 576px) {
-  :root,
-  :host {
-    font-size: 106.25%;
-  }
-}
-@media (min-width: 768px) {
-  :root,
-  :host {
-    font-size: 112.5%;
-  }
-}
-@media (min-width: 1024px) {
-  :root,
-  :host {
-    font-size: 118.75%;
-  }
-}
-@media (min-width: 1280px) {
-  :root,
-  :host {
-    font-size: 125%;
-  }
-}
-@media (min-width: 1536px) {
-  :root,
-  :host {
-    font-size: 131.25%;
-  }
-}
  html {
   font-family: 'Hanken Grotesk', sans-serif;
+  font-size: clamp(1rem, .8rem + .8vw, 1.5rem);
  }
 
  body{
@@ -283,7 +254,8 @@ body > main {
 
   #site-nav {
     padding: 0 5%;
-    font: 1.5rem bold;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
 	#menu-toggle:has(input:checked) ~ #nav-panel {
