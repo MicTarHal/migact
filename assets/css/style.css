@@ -20,11 +20,11 @@
  }
 
 body > header, body > main, body > footer {
-  padding-inline: 5%;
+  padding-inline: max(1rem, calc(50vw - 800px));
 }
 
 body > main {
-  margin-block: 2%;
+  margin-block: 1rem;
 }
 
  dt {
