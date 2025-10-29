@@ -253,7 +253,7 @@ body > main {
   }
 
   #site-nav {
-    padding: 0 5%;
+    padding: 0 1rem;
     font-size: 1.5rem;
     font-weight: bold;
   }
@@ -355,37 +355,6 @@ body > main {
      Tablet (768px+)
      ============================================ */
   @media (min-width: 768px) {
-    #menu-toggle {
-      display: none;
-    }
-
-    #nav-panel{
-      position: revert;
-      background: revert;
-      height: revert;
-      display: flex;
-    }
-
-    #site-nav {
-      display: flex;
-      font-size: revert;
-    }
-
-    #site-nav li > ul {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      padding: 0px;
-    }
-
-    #site-nav a {
-      border: revert;
-    }
-
-    #site-nav li:has(ul):hover > ul {
-      display: block;
-    }
 
     .card-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -416,6 +385,43 @@ body > main {
      Desktop (1024px+)
      ============================================ */
   @media (min-width: 1024px) {
+    
+    /* Navigation menu */
+
+    #menu-toggle {
+      display: none;
+    }
+
+    #nav-panel{
+      position: revert;
+      background: revert;
+      height: revert;
+      display: flex;
+    }
+
+    #site-nav {
+      padding: 0;
+      display: flex;
+      font-size: revert;
+    }
+
+    #site-nav li > ul {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 0px;
+    }
+
+    #site-nav a {
+      border: revert;
+    }
+
+    #site-nav li:has(ul):hover > ul {
+      display: block;
+    }
+
+    /* /Navigation Menu */
     
     .card-grid {
       grid-template-columns: repeat(3, 1fr);
