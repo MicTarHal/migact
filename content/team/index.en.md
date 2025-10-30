@@ -1,4 +1,3 @@
 ---
-title: Our Team
-description: Meet the dedicated individuals behind MigAct
+title: Meet the dedicated individuals behind MigAct
 ---

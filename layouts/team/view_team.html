@@ -2,6 +2,6 @@
   <img src='{{ (.Parent.Resources.Get .Params.photo).RelPermalink }}' alt="Portrait of {{ .Title }}"/>
   <h2>{{ .Title }}</h2>
   <h6>{{ .Params.position }}</h6>
-  <a>{{ .Params.contact }}</a>
+  <a href="mailto:{{ .Params.contact }}">{{ .Params.contact }}</a>
   {{ .Content }}
 </article>

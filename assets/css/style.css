@@ -126,6 +126,7 @@ body > main {
 
 #activities > dl > div {
   margin: 0 1rem;
+  flex: 1;
 }
 
 #activities img {

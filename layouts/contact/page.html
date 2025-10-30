@@ -1,7 +1,6 @@
 {{ define "main" }}
 <main>
     <h1>{{ .Title }}</h1>
-    <h2>{{ .Description }}</h2>
     <address>
         <dl id="contacts-container" class="cards">
             <div>
@@ -14,7 +13,7 @@
                 <img src='{{ (.Resources.Get "email.svg").RelPermalink }}' />
                 <dt>{{ i18n "email" }}</dt>
                 {{ $val := .Site.Params.contact.email }}
-                <dd><a href='tel:{{ $val }}'>{{ $val }}</a></dd>
+                <dd><a href='mailto:{{ $val }}'>{{ $val }}</a></dd>
             </div>
             <div>
                 <img src='{{ (.Resources.Get "location.svg").RelPermalink }}' />
