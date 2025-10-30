@@ -8,15 +8,23 @@
   --logo-height: 3rem;
  }
  /* colors {#548feb;#ffb33d;#f37c14;#229fa3;}*/  
+ * {
+  box-sizing: inherit;
+}
 
  html {
   font-family: 'Hanken Grotesk', sans-serif;
   font-size: clamp(1rem, .8rem + .8vw, 1.5rem);
+  height:100%;
+  box-sizing: border-box;
  }
 
  body{
   margin:0;
   min-width: 360px;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
  }
 
 body > header, body > main, body > footer {
