@@ -1,3 +1,12 @@
+# Navigation menus
+about: Who are we
+team: Our Team
+events_news: Events & news
+projects: Our projects
+join_us: Get involved
+contact: Get in touch
+
+# Dynamic lists
 ongoing_projects: Ongoing Projects
 finished_projects: Finished Projects
 news: News
@@ -19,8 +28,9 @@ tba: To be announced
 signup: Sign up here
 
 # Footer
-about_footer_group: About
-get_active: Get active
+footer_about: About
+footer_events: Attend events
+footer_involve: Get active
 copyright: Copyright %v %s
 motto: We strive towards an inclusive and diverse civil society.
 

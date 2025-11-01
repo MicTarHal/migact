@@ -1,73 +1,61 @@
 [[main]]
 identifier = 'about'
-name = 'Who are we'
 pageRef = '/about'
 weight = 10
 [[main]]
 identifier = 'team'
-name = 'Our Team'
 pageRef = '/team'
-parent = 'about'  
-weight = 1
-[[main]]
-identifier = 'what_we_do'
-name = 'Events & news'
-pageRef = '/events-news'
 weight = 20
 [[main]]
-identifier = 'projects'
-name = 'Our projects'
-pageRef = '/projects'
+identifier = 'events_news'
+pageRef = '/events-news'
 weight = 30
 [[main]]
-identifier = 'join_us'
-name = 'Get involved'
-pageRef = '/join-us'
+identifier = 'projects'
+pageRef = '/projects'
 weight = 40
 [[main]]
-identifier = 'contact'
-name = 'Get in touch'
-pageRef = '/contact'
+identifier = 'join_us'
+pageRef = '/join-us'
 weight = 50
+[[main]]
+identifier = 'contact'
+pageRef = '/contact'
+weight = 60
 
 [[footer]]
-identifier = 'about_footer_group'
-name = 'About'
+identifier = 'footer_about'
 weight = 10
 [[footer]]
 identifier = 'about'
-name = 'Who are we'
 pageRef = '/about'
-parent = 'about_footer_group'
+parent = 'footer_about'
 weight = 11
 [[footer]]
 identifier = 'team'
-name = 'Our Team'
 pageRef = '/team'
-parent = 'about_footer_group'
+parent = 'footer_about'
 weight = 12
 [[footer]]
-identifier = 'get_active'
-name = 'Get active'
+identifier = 'footer_involve'
 weight = 20
 [[footer]]
 identifier = 'join_us'
-name = 'Get involved'
 pageRef = '/join-us'
-parent= 'get_active'
+parent= 'footer_involve'
 weight = 21
 [[footer]]
-name = 'Attend events'
+identifier = 'footer_events'
 pageRef = '/events-news'
-parent= 'get_active'
+parent= 'footer_involve'
 weight = 22
 [[footer]]
-name = 'Get in touch'
+identifier = 'contact'
 pageRef = '/contact'
-parent= 'get_active'
+parent= 'footer_involve'
 weight = 23
 [[footer]]
-name = 'Donate'
+identifier = 'donate'
 url = 'https://www.darujme.cz/projekt/1210263?locale=en'
-parent= 'get_active'
+parent= 'footer_involve'
 weight = 24

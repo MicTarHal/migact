@@ -51,16 +51,18 @@
                     <img class="brand" src='{{ $linkedin.RelPermalink }}' alt="LinkedIn"></a></li>
               </ul>
         </div>
+        <div id="footer-links">
         {{ range site.Menus.footer }}
-            <div class="footer-link-group">
-                <h3 class="footer-header">{{ .Name }}</h3>
+            <div>
+                <h1>{{ i18n .Identifier }}</h1>
                 <ul>
                     {{ range .Children }}
-                        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                        <li><a href="{{ .URL }}">{{ i18n .Identifier }}</a></li>
                     {{ end }}
                 </ul>
             </div>
         {{ end }}
+        </div>
         <p id="footer-copyright">{{ printf (i18n "copyright") now.Year .Site.Title }}</p>
     </footer>
 </body>
