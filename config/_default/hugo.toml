@@ -1,5 +1,6 @@
-baseURL = 'https://migact.net'
+baseURL = 'https://migact.net/'
 defaultContentLanguage = 'en'
+enableGitInfo = true
 enableRobotsTXT = true
 timeZone = 'Europe/Prague'
 disableKinds = ['taxonomy','term']
@@ -51,9 +52,8 @@ disableKinds = ['taxonomy','term']
   keepDocumentTags = true
   keepQuotes = false
 
-[taxonomies]
-  tag = 'tags'
-  category = 'categories'
+[outputFormats.calendar]
+  baseName = 'invitation'
 
 [[cascade]]
   [build]
@@ -69,5 +69,6 @@ disableKinds = ['taxonomy','term']
 
 [[cascade]]
   type = "events"
+  outputs = ["html", "rss", "calendar"]
   [cascade.target]
     path = '/events-news/events/**'
