@@ -1,10 +1,10 @@
 ---
 title: How to build communities to foster belonging and civic engagement?
-params:
-    tagline: Join us for a Panel Discussion & Networking Session
-    date: 2025-09-29
-    time: 17:30--20:00
-    location: [Dům U Kamenného zvonu, Prague City Gallery, Staroměstské náměstí 605/13 11000, Praha 1]
+cover: profile.29.9-2.webp
+dtstart: 2025-09-29T17:30:00.000+02:00
+dtend: 2025-09-29T20:00:00.000+02:00
+location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
+project: civic-integration-migrant-residents/index
 ---
 We warmly invite you to take part in an engaging afternoon of discussion and exchange. This event brings together local community organizers, migrant-led initiatives, and supporters of civic engagement in Prague.
 

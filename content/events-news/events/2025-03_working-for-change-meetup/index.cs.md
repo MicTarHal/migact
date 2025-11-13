@@ -1,7 +1,12 @@
 ---
-title: Meetup – Jak se angažovat v důležitých tématech ve své zemi původu a zároveň se zapojit do témat v zemi, kde žiješ
-date: 2025-03-15T18:00:00+01:00
-description: Připojte se k našemu prvnímu neformálnímu setkání ve formátu vyprávění příběhů
+title: Meetup – Jak se angažovat v důležitých tématech ve své zemi původu a
+  zároveň se zapojit do témat v zemi, kde žiješ
+cover: fb_img_1714055522240.avif
+dtstart: 2025-03-21T17:30:00.000+01:00
+dtend: 2025-03-21T19:30:00.000+01:00
+location: ""
+registration: https://forms.gle/SQukpSYoYXuBxFkw9
+project: civic-integration-migrant-residents/index
 ---
 
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
@@ -9,6 +14,9 @@ Připojte se k první akci nové série neformálních setkání. Ve formátu vy
 **Přiveďte své přátele**  
 **Přiveďte své nápady**  
 **Zapojte se do konverzace!**
+
+
+<!--more-->
 
 ## První téma: Jak se angažovat ve změnách ve své zemi původu a zároveň dělat rozdíl tam, kde žijete
 

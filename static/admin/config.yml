@@ -1,42 +1,82 @@
-backend:
-  name: github
-  repo: MicTarHal/migact
-  branch: main
+local_backend: true
 
-media_folder: "static/uploads"
-public_folder: "/uploads"
+backend:
+  name: git-gateway
+
+media_folder: "static/media"
+public_folder: "/media"
 
 collections:
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
+    path: "{{slug}}/index"
     create: true
     slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", choose_url: true, media_folder: "images", media_library: { config: { multiple: true } } }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Status", name: "status", widget: "select", options: ["ongoing", "finished"], default: "ongoing", i18n: duplicate }
+      - { label: "Starts", name: "dtstart", widget: "datetime", i18n: duplicate}
+      - { label: "Ends", name: "dtend", widget: "datetime", i18n: duplicate }
+      - { label: "Partners", name: "partners", widget: "select", required: false, multiple: true, options: ["PRG", "EUR"], i18n: duplicate }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - label: "Gallery"
+        name: "images"
+        widget: "image"
+        choose_url: false
+        required: false
+        i18n: duplicate
 
   - name: "events"
     label: "Events"
     folder: "content/events-news/events"
+    path: "{{slug}}/index"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}_{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Location", name: "location", widget: "map" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Featured Image", name: "cover", widget: "image", choose_url: false, allow_multiple: false, i18n: duplicate }
+      - { label: "Starts", name: "dtstart", widget: "datetime", i18n: duplicate }
+      - { label: "Ends", name: "dtend", widget: "datetime", i18n: duplicate, required: false }
+      - { label: "Location", name: "location", widget: "string", i18n: duplicate, required: false }
+      - { label: "Registration", name: "registration", widget: "string", required: false, i18n: duplicate }
+      - label: "Project"
+        name: "project"
+        widget: "relation"
+        collection: "projects"
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        search_fields: ["title"]
+        i18n: duplicate
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
 
   - name: "news"
     label: "News"
     folder: "content/events-news/news"
+    path: "{{slug}}/index"
     create: true
     slug: "{{slug}}"
+    media_folder: ''
+    public_folder: ''
+    i18n: true
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Title", name: "title", widget: "string", i18n: true }
+      - { label: "Body", name: "body", widget: "markdown", i18n: true }
+      - label: "Attachment"
+        name: "resources"
+        widget: "file"
+        choose_url: false
+        required: false
+        i18n: duplicate
+        media_library:
+          config:
+            multiple: true
 
 i18n:
   structure: multiple_files

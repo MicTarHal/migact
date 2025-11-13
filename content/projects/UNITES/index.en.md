@@ -1,9 +1,6 @@
 ---
 title: UNITES
-params:
-    status: finished
 ---
-
 Led by Eurocities, UNITES (UrbaN InTEgration Strategies through co-design) trains and accompanies local authorities to co-design integration strategies with other stakeholders and migrants.
 
 MigAct has been a part of the UNITES project from its beginning. In collaboration with Prague City Hall, we strategically devised and executed a number of participatory workshops, each geared towards fostering stronger collaboration between Prague City Hall and residents with migration backgrounds.

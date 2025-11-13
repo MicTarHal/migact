@@ -1,14 +1,12 @@
 ---
 title: City for All – Support for Civic Participation in an Intercultural Environment
-params:
-    status: finished
-    start_date: 2024-05-01
-    end_date: 2024-12-31
-    donors: [Prague City Hall]
+status: finished
+dtstart: 2024-05-01T00:00:00.000+02:00
+dtend: 2024-12-31T00:00:00.000+01:00
+partners:
+  - PRG
+images: ""
 ---
+Socially engaged individuals with migration backgrounds and civic initiatives led by migrants face many obstacles on their path to civic participation. These obstacles include language barriers, lack of information and contextual understanding, experiences of rejection, prejudice, or xenophobia and others. This project aims to mitigate some of these obstacles through awareness-raising and netwroking, counseling and strengthening  civic competencies.
 
-Socially engaged individuals with migration backgrounds and civic initiatives led by migrants face many obstacles on their path to civic participation. These obstacles include language barriers, lack of information and contextual understanding,  experiences of rejection, prejudice, or xenophobia and others. This project aims to mitigate some of these obstacles through awareness-raising and netwroking, counseling and strengthening  civic competencies.
-
-Project duration: 01.05.2024-31.12.2024
-
-This project is run in cooperation with Prague City Hall. 
+This project is run in cooperation with Prague City Hall.

@@ -1,12 +1,6 @@
 ---
 title: Together for Prague - Supporting Civic Participation and Community Leaders
-params:
-    status: ongoing
-    start_date: 2025-04-01
-    end_date: 2025-12-31
-    donors: [City of Prague]
 ---
-
 The aim of the project is to provide comprehensive support for residents with migration backgrounds in the area of civic and political participation in the capital city of Prague.
 
 Project Activities
