@@ -1,0 +1,12 @@
+<article class="card">
+  {{ $logo := .Resources.GetMatch "logo.*" }}
+  {{ if $logo }}
+    <img src="{{ $logo.RelPermalink }}" alt="{{ .Title }} logo" class="donor-logo">
+  {{ end }}
+  <h2>{{ .Title }}</h2>
+  {{ if .Params.website }}
+    <a href="{{ .Params.website }}" target="_blank" rel="noopener noreferrer">{{ .Params.website }}</a>
+  {{ end }}
+  {{ .Content }}
+</article>
+

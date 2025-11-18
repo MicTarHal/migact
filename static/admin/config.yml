@@ -7,6 +7,19 @@ media_folder: "static/media"
 public_folder: "/media"
 
 collections:
+  - name: "donors"
+    label: "Donors"
+    folder: "content/donors"
+    create: true
+    media_folder: ''
+    public_folder: ''
+    i18n: true
+    fields:
+      - {label: Title, name: title, widget: "string", i18n: true }
+      - {label: Logo, name: image, widget: "image", choose_url: false, i18n: duplicate }
+      - {label: Link, name: website, widget: "string", i18n: duplicate }
+      - {label: Body, name: body, widget: "markdown", i18n: true }
+
   - name: "projects"
     label: "Projects"
     folder: "content/projects"
@@ -21,7 +34,16 @@ collections:
       - { label: "Status", name: "status", widget: "select", options: ["ongoing", "finished"], default: "ongoing", i18n: duplicate }
       - { label: "Starts", name: "dtstart", widget: "datetime", i18n: duplicate}
       - { label: "Ends", name: "dtend", widget: "datetime", i18n: duplicate }
-      - { label: "Partners", name: "partners", widget: "select", required: false, multiple: true, options: ["PRG", "EUR"], i18n: duplicate }
+      - label: "Partners"
+        name: "partners"
+        widget: "relation"
+        collection: "donors"
+        value_field: "{{slug}}"
+        display_fields: ["title"]
+        search_fields: ["title"]
+        required: false
+        multiple: true
+        i18n: duplicate
       - { label: "Body", name: "body", widget: "markdown", i18n: true }
       - label: "Gallery"
         name: "images"
