@@ -11,10 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     {{ if hugo.IsMultilingual }}
-    {{ range .AllTranslations }}
-    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
+        {{ range .AllTranslations }}
+            <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .RelPermalink }}">
+        {{ end }}
     {{ end }}
-    {{ end }}
+    {{ partial "opengraph.html" . }}
 </head>
 <body>
     {{ $logo := resources.Get "images/migact_logo.svg" }}
