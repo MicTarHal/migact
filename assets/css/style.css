@@ -126,7 +126,7 @@ video {
 }
 
 /* || Language Switcher */
-.lang-switcher {
+#lang-switcher {
   display: flex;
   justify-content: center;
   align-items: center;

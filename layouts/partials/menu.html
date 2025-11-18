@@ -7,9 +7,9 @@
     {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
   </ul>
   {{- with $page }}
-  <div class="lang-switcher">
+  <ul id="lang-switcher">
     {{ range $index, $translation := .AllTranslations }}
-      {{ if $index }}<span class="lang-separator">|</span>{{ end }}
+    <li>
       {{- $attrs := dict "href" .RelPermalink "hreflang" .Language.Lang }}
       {{- if eq .Language $page.Language }}
         {{- $attrs = merge $attrs (dict "class" "active" "aria-current" "page") }}
@@ -20,8 +20,9 @@
             {{- printf " %s=%q" $k $v | safeHTMLAttr }}
           {{- end }}
         {{- end -}}>{{ .Language.LanguageName | upper }}</a>
+      </li>  
     {{ end }}
-  </div>
+  </ul>
   {{- end }}
 </nav>
 {{- end }}
