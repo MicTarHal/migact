@@ -1,0 +1,10 @@
+{{ define "main" }}
+<main id="donors">
+    <h1>{{ .Title }}</h1>
+    <div class="card-grid">
+        {{ range .Pages }}
+            {{ .Render "view_donor" }}
+        {{ end }}
+    </div>
+</main>
+{{ end }}
