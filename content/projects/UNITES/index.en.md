@@ -1,5 +1,10 @@
 ---
 title: UNITES
+status: finished
+dtstart: '2021-01-01'
+dtend: '2023-12-31'
+partners:
+  - prague-city-hall
 ---
 Led by Eurocities, UNITES (UrbaN InTEgration Strategies through co-design) trains and accompanies local authorities to co-design integration strategies with other stakeholders and migrants.
 

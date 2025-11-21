@@ -4,19 +4,35 @@
     {{ with .Params.status }}
       <dt>Status</dt><dd>{{ i18n . }}</dd>
     {{ end }}
-    {{ if .Params.start_date }}
-      <dt>{{ i18n "duration" }}</dt><dd>{{.Params.start_date}} -- {{.Params.end_date}}</dd>
+    {{ if .Params.dtstart }}
+      <dt>{{ i18n "duration" }}</dt><dd>{{.Params.dtstart}} -- {{.Params.dtend}}</dd>
     {{ end }}
-    {{ with .Params.donors }}
-      <dt>{{ i18n "donors" }}</dt>  
+    {{ with .Params.partners }}
+    {{ $donorsPage := $.Site.GetPage "donors" }}
+      <dt>{{ i18n "donors" }}</dt>
+      <dd class="donors">
       {{ range . }}
-        <dd>{{ . }}</dd>
+          {{ $donorPage := $donorsPage.GetPage . }}
+          {{ $image := $donorPage.Resources.GetMatch "logo.*" }}
+          <img src="{{ $image.Permalink }}" alt="{{ $donorPage.Title }}">
       {{ end }}
+      </dd>
     {{ end }}
   </dl>
   <section>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    {{ with .Params.images }}
+    <section>
+      <h2>Gallery</h2>
+      <div class="gallery">
+        {{ range . }}
+        {{ $image := $.Resources.Get . }}
+        <img src="{{ $image.Permalink }}" alt="{{ . }}">
+        {{ end }}
+      </div>
+    </section>
+    {{ end }}
   </section>
 </main>
 {{ end }}

@@ -355,6 +355,25 @@ video {
   content: ":";
 }
 
+.gallery {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+
+  img {
+    flex: 0 1 30%;
+    width: 100%;
+  }
+}
+
+.donors {
+  img {
+    width: 200px;
+    height: auto;
+    margin: 20px;
+  }
+}
+
 /* ============================================     Tablet (768px+)     ============================================ */
 @media (min-width: 768px) {
   #site-footer {
