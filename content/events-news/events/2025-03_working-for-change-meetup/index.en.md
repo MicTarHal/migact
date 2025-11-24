@@ -47,5 +47,3 @@ This will be an informal, storytelling-based meetup. We'll create a welcoming sp
 This is the first in our new series of community meetups. More topics and events coming soon!
 
 [Contact us](mailto:info@migact.net) for more information or to suggest future topics.
-
-

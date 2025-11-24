@@ -8,13 +8,11 @@ location: ""
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents/index
 ---
-
 Připojte se k první akci nové série neformálních setkání. Ve formátu vyprávění příběhů se zapojíme do diskusí, aktivit, komunitního koučování a networkingu na témata související s občanskou participací a zkušenostmi cizinců žijících v Praze.
 
 **Přiveďte své přátele**  
 **Přiveďte své nápady**  
 **Zapojte se do konverzace!**
-
 
 <!--more-->
 
@@ -49,5 +47,3 @@ Bude to neformální meetup založený na vyprávění příběhů. Vytvoříme 
 Toto je první v naší nové sérii komunitních setkání. Brzy přijdou další témata a akce!
 
 [Kontaktujte nás](mailto:info@migact.net) pro více informací nebo k navržení budoucích témat.
-
-
