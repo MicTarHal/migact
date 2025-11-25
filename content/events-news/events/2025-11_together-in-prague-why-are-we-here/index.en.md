@@ -2,7 +2,7 @@
 title: "Together in Prague: Why are we here?"
 cover: 13.11-horizontal.webp
 dtstart: 2025-11-13T17:30:00.000+01:00
-dtend: 2025-11-13T19:30:00.000+01:00
+duration: 120
 location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, 110 00 Prague 1
 project: together-for-prague/index
 ---

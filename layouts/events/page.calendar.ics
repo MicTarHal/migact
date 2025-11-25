@@ -4,8 +4,8 @@ PRODID:-//MigAct//gohugo.io//EN
 BEGIN:VEVENT
 UID:{{ .File.UniqueID }}@migact.net
 DTSTAMP:{{ .Lastmod.UTC.Format "20060102T150405Z" }}
-DTSTART:{{ (time.AsTime .Params.dtstart).UTC.Format "20060102T150405Z" }}{{ with .Params.dtend }}
-DTEND:{{ (time.AsTime .).UTC.Format "20060102T150405Z" }}{{ end }}
+DTSTART:{{ (time.AsTime .Params.dtstart).UTC.Format "20060102T150405Z" }}{{ with .Params.duration }}
+DURATION:PT{{ . }}M{{ end }}
 SUMMARY:{{ replaceRE "([,;])" "\\$1" .Title }}{{ with .Params.location }}
 LOCATION:{{ replaceRE "([,;])" "\\$1" . }}{{ end }}
 END:VEVENT

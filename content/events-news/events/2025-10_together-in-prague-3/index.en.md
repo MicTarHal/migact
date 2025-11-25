@@ -2,7 +2,7 @@
 title: Together in Prague 3
 cover: p3-23.10-.webp
 dtstart: 2025-10-23T17:30:00.000+02:00
-dtend: 2025-10-23T19:00:00.000+02:00
+duration: 90
 location: Krenovka, Husitská 22, Prague 3
 registration: https://forms.gle/6hr5bcXfJC544gUs5
 project: together-for-prague/index

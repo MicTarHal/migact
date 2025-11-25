@@ -2,7 +2,7 @@
 title: Together in Prague 7 Vol. 2 – Community Breakfast
 cover: 23.6_2-scaled.webp
 dtstart: 2025-09-17T09:00:00.000+02:00
-dtend: 2025-09-17T11:00:00.000+02:00
+duration: 120
 location: Přístav 7, V Přístavu 24, Prague 7
 registration: https://forms.gle/2MWR13Tu8sKqnCvu7
 project: together-for-prague/index

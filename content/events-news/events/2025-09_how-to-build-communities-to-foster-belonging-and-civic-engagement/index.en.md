@@ -2,7 +2,7 @@
 title: How to build communities to foster belonging and civic engagement?
 cover: profile.29.9-2.webp
 dtstart: 2025-09-29T17:30:00.000+02:00
-dtend: 2025-09-29T20:00:00.000+02:00
+duration: 150
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
 project: civic-integration-migrant-residents/index
 ---
