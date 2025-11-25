@@ -17,7 +17,7 @@ We work with local institutions, NGOs, community centers, and initiatives to bui
 Together we can design activities, share resources, and strengthen participation across communities. Contact us to explore partnership opportunities.
 
 ## Our Partners and Supporters
--- Gallery of partner and donor logos --
+{{< partners >}}
 
 ### Support Us With a Donation
 Your contribution helps us keep our programs running, develop new activities, and maintain inclusive spaces for everyone. Even a small donation goes a long way toward strengthening community life in Prague. Donate via Darujme →
