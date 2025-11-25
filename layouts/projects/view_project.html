@@ -9,8 +9,8 @@
     {{ if .Params.start_date }}
       <dt>{{ i18n "duration" }}</dt><dd>{{.Params.start_date}} -- {{.Params.end_date}}</dd>
     {{ end }}
-    {{ with .Params.donors }}
-      <dt>{{ i18n "donors" }}</dt>  
+    {{ with .Params.partners }}
+      <dt>{{ i18n "partners" }}</dt>  
       {{ range . }}
         <dd>{{ . }}</dd>
       {{ end }}
