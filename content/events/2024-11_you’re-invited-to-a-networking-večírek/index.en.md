@@ -2,7 +2,7 @@
 title: You’re Invited to a Networking Večírek!
 featured: featured.webp
 dtstart: 2024-11-29T17:00:00
-duration: 180
+tend: 20:00:00
 location: Prague City University, Biskupský dvůr 1147/6, 110 00 Petrská čtvrť
 registration: https://forms.gle/1L7pAaEQg7gDvrLg6
 project: city-for-all

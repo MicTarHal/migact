@@ -2,7 +2,7 @@
 title: Public Forum - civic and political life in Prague
 featured: featured.webp
 dtstart: 2024-09-12T17:30:00
-duration: 120
+tend: 19:30:00
 location: Škodův palác - room n. 201, Jungmannova 35, 110 00 Nové Město
 registration: https://forms.gle/ypc2Ksn3xB7TVTvv8
 project: city-for-all

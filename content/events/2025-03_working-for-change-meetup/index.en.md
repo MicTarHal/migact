@@ -1,7 +1,7 @@
 ---
 title: Meetup – Working for change in your country of origin, while also making a difference where you live
-dtstart: 2025-03-21T17:30:00.000+01:00
-duration: 120
+dtstart: 2025-03-21T17:30:00
+tend: 19:30:00
 location: ''
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents

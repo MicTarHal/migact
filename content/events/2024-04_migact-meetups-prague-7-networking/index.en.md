@@ -2,7 +2,7 @@
 title: MigAct Meetups - Prague 7 Networking
 featured: featured.webp
 dtstart: 2024-05-15T17:30:00
-duration: 150
+tend: 20:00:00
 location: Letohradská 711/10, 170 00 Praha 7-Holešovice
 registration: https://forms.gle/VPZKxQXshP4JCouY6
 project: city-for-all

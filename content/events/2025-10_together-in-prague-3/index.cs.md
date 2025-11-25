@@ -1,8 +1,8 @@
 ---
 title: Společně na Praze 3
 featured: featured.webp
-dtstart: 2025-10-23T17:30:00.000+02:00
-duration: 90
+dtstart: 2025-10-23T17:30:00
+tend: 19:00:00
 location: Krenovka, Husitská 22, Prague 3
 registration: https://forms.gle/6hr5bcXfJC544gUs5
 ---

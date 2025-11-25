@@ -1,11 +1,11 @@
 ---
 title: How to build communities to foster belonging and civic engagement?
-dtstart: 2025-09-29T17:30:00.000+02:00
-duration: 150
+featured: featured.webp
+dtstart: 2025-09-29T17:30:00
+tend: 20:00:00
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
 registration: ''
 project: city-for-all
-featured: featured.webp
 ---
 We warmly invite you to take part in an engaging afternoon of discussion and exchange. This event brings together local community organizers, migrant-led initiatives, and supporters of civic engagement in Prague.
 
