@@ -1,28 +1,32 @@
 ---
 title: How to build communities to foster belonging and civic engagement?
-cover: profile.29.9-2.webp
 dtstart: 2025-09-29T17:30:00.000+02:00
 duration: 150
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
-project: civic-integration-migrant-residents/index
+registration: ''
+project: city-for-all
+cover: profile.29.9-2.webp
 ---
 We warmly invite you to take part in an engaging afternoon of discussion and exchange. This event brings together local community organizers, migrant-led initiatives, and supporters of civic engagement in Prague.
 
 <!--more-->
 
 You’ll have the chance to:
+
 * Connect with community organizers and fellow participants
 * Discover inspiring migrant-led communities in Prague
 * Take part in a dynamic panel discussion with our guest speakers
 
 Speakers:
+
 * Petr Štádler – Head of Probuďme Nusle initiative, manager of the festival Zažít město jinak and Municipal Representative in Prague 4
 * Justin Mainous – Mindset coach, community organizer and founder of the initiative @Agora Network
-* Andrea Studihradová – CSR manažerka (Silnější hybatelé, Dokážeme víc, Dobro.dějky Substack), Česká spořitelna 
+* Andrea Studihradová – CSR manažerka (Silnější hybatelé, Dokážeme víc, Dobro.dějky Substack), Česká spořitelna
 
 Moderator: Ben Curtis – Board Member, MigAct z. s.
 
 ### Program
+
 * 17:30 – 17:40 | Opening Remarks
 * 17:40 – 19:00 | Panel Discussion + Q&A: How to build communities to foster belonging and civic engagement?
 * 19:00 – 19:15 | Coffee break

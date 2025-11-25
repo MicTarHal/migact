@@ -5,7 +5,6 @@ dtstart: 2025-10-23T17:30:00.000+02:00
 duration: 90
 location: Krenovka, Husitská 22, Prague 3
 registration: https://forms.gle/6hr5bcXfJC544gUs5
-project: together-for-prague/index
 ---
 Join us for an evening of meaningful connections at Krenovka! Meet socially engaged neighbors and share stories and inspirations from civic and community life in Prague 3.
 

@@ -1,10 +1,11 @@
 ---
 title: Jak budovat komunity posilující sounáležitost a aktivní občanství?
-cover: profile.29.9-2.webp
 dtstart: 2025-09-29T17:30:00.000+02:00
 duration: 150
 location: Dům U Kamenného zvonu, Staroměstské náměstí 605/13, 11000 Praha 1
-project: civic-integration-migrant-residents/index
+registration: ''
+project: city-for-all
+cover: profile.29.9-2.webp
 ---
 Srdečně vás zveme k účasti na inspirativním odpoledni plném diskusí a sdílení zkušeností. Setkají se zde organizátoři místního komunitního života, iniciativy vedené migranty a příznivci aktivního občanství v Praze.
 

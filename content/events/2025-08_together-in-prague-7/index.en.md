@@ -5,7 +5,6 @@ dtstart: 2025-09-17T09:00:00.000+02:00
 duration: 120
 location: Přístav 7, V Přístavu 24, Prague 7
 registration: https://forms.gle/2MWR13Tu8sKqnCvu7
-project: together-for-prague/index
 ---
 Join us for a cozy breakfast to meet neighbors, exchange ideas, and explore how to make Prague 7 more open and inclusive. We’ll share what we’ve learned from our mapping on active citizenship among people with migration backgrounds in Prague 7—what’s working, what’s missing, and where we go from here.
 

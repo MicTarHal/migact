@@ -1,17 +1,16 @@
 ---
-title: Meetup – Working for change in your country of origin, while also making
-  a difference where you live
-cover: fb_img_1714055522240.avif
+title: Meetup – Working for change in your country of origin, while also making a difference where you live
 dtstart: 2025-03-21T17:30:00.000+01:00
 duration: 120
-location: ""
+location: ''
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
-project: civic-integration-migrant-residents/index
+project: civic-integration-migrant-residents
+cover: fb_img_1714055522240.avif
 ---
 Join the first event of a new series of informal meetings. In a storytelling format we will engage in discussions, activities, community coaching, and networking on topics related to civic participation and experiences of foreigners living in Prague.
 
-**Bring your friends**  
-**Bring your ideas**  
+**Bring your friends**
+**Bring your ideas**
 **Join the conversation!**
 
 <!--more-->
@@ -21,6 +20,7 @@ Join the first event of a new series of informal meetings. In a storytelling for
 Many of us living in Prague maintain connections to our countries of origin while building new lives here. This creates unique opportunities and challenges when it comes to civic engagement. How do we balance our desire to create positive change "back home" with our responsibility to contribute to the communities where we now live?
 
 Join us for an interactive discussion where we'll explore:
+
 - Strategies for staying engaged with issues in your home country
 - Ways to make a meaningful impact in Prague's local community
 - Building bridges between different causes and communities
@@ -40,8 +40,8 @@ This will be an informal, storytelling-based meetup. We'll create a welcoming sp
 
 ## When and Where
 
-**Date:** [To be announced]  
-**Time:** [To be announced]  
+**Date:** [To be announced]
+**Time:** [To be announced]
 **Location:** [To be announced]
 
 This is the first in our new series of community meetups. More topics and events coming soon!

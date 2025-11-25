@@ -18,6 +18,15 @@
       {{ end }}
       </dd>
     {{ end }}
+    {{ $events := site.GetPage "events" }}
+    {{ $key := path.Base $.Path }}
+    {{ $related := where $events.RegularPages "Params.project" $key }}
+    {{ with $related }}
+      <dt>Events</dt>
+      {{ range . }}
+        <dd><a href="{{ .Permalink }}">{{ .Title }}</a></dd>
+      {{ end }}
+    {{ end }}
   </dl>
   <section>
     <h1>{{ .Title }}</h1>

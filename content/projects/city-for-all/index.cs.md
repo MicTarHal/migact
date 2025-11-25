@@ -1,10 +1,11 @@
 ---
 title: Metropole všech – podpora občanské participace v interkulturním prostředí
 status: finished
-dtstart: '2024-05-01'
-dtend: '2024-12-31'
+dtstart: 2024-05-01
+dtend: 2024-12-31
 partners:
-  - prague-city-hall
+  - amiga-zs
+  - epim
 images:
   - 12.09.1-scaled.jpg
   - 12.09.2-scaled.jpg
