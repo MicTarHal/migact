@@ -13,7 +13,7 @@ Our work is guided by our Theory of Change — a framework that explains how our
 ## Our Story
 Born out of InBáze z.s. 's long-standing work with migrants in Prague, MigAct officially launched in November 2022. Since then, we’ve grown into a vibrant, community-driven association working toward an inclusive, accessible civil society for all. You can read more in our Annual Reports.
 - Annual Report 2023
-- [Annual Report 2024](events-news/news/annual-report-2024)
+- [Annual Report 2024](news/annual-report-2024)
 
 ## Meet Our Team
 Our work wouldn’t be possible without a dedicated and passionate team. [Meet the people behind MigAct](team)

@@ -85,7 +85,7 @@ collections:
 
   - name: events
     label: Events
-    folder: content/events-news/events
+    folder: content/events
     path: "{{slug}}/index"
     create: true
     slug: "{{year}}-{{month}}_{{slug}}"
@@ -111,7 +111,7 @@ collections:
 
   - name: news
     label: News
-    folder: content/events-news/news
+    folder: content/news
     path: "{{slug}}/index"
     create: true
     slug: "{{slug}}"
