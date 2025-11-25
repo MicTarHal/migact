@@ -5,7 +5,6 @@ duration: 120
 location: ''
 registration: https://forms.gle/SQukpSYoYXuBxFkw9
 project: civic-integration-migrant-residents
-cover: fb_img_1714055522240.avif
 ---
 Join the first event of a new series of informal meetings. In a storytelling format we will engage in discussions, activities, community coaching, and networking on topics related to civic participation and experiences of foreigners living in Prague.
 

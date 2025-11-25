@@ -1,6 +1,6 @@
 ---
 title: Společně v Praze 7, díl 2 – Komunitní snídaně
-cover: 23.6_2-scaled.webp
+featured: featured.webp
 dtstart: 2025-09-17T09:00:00.000+02:00
 duration: 120
 location: Přístav 7, V Přístavu 24, Prague 7

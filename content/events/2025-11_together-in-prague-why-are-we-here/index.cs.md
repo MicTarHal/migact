@@ -1,6 +1,6 @@
 ---
 title: "Společně v Praze: Proč jsme tady?"
-cover: 13.11-horizontal.webp
+featured: featured.webp
 dtstart: 2025-11-13T17:30:00.000+01:00
 duration: 120
 location: Centrum a Kavárna Člověka v tísni, Vodičkova 707/37, 110 00 Prague 1
