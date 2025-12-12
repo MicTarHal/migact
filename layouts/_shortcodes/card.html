@@ -1,0 +1,12 @@
+{{ $image := .Page.Resources.Get (.Get "image") }}
+
+<div class="card">
+    <img src="{{ $image.RelPermalink }}"/>
+    <div class="icon">
+        <svg viewbox="0 0 24 24"><use href='{{ .Get "icon" }}'/></svg>
+    </div>
+    <div class="content">
+        <dt>{{ .Get "title" }}</dt>
+        <dd>{{ .Inner }}</dd>
+    </div>
+</div>
